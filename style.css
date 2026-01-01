@@ -1,0 +1,254 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #f4f4f4;
+    line-height: 1.6;
+    background-image: url('Portfolio4.avif');
+    /* background-size: cover;        */
+    background-repeat: repeat; 
+    
+}
+
+/* Nav Bar */
+
+ #nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  padding: 1rem 0;
+  margin-right: 30%;
+  
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: #f4f4f4;
+  padding: 5px 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: 2px solid transparent; 
+  border-radius: 10px;
+}
+
+#nav-bar a:hover {
+  color: #fdf0d5;
+  border-color: #faedcd;
+  transform: scale(1.1); 
+}
+
+/* Hero Section */
+
+.hero-section {
+    font-size: 20px;
+    margin: 40px 0px 0px 50px;    
+}
+
+#my-detail {
+  display: flex;
+  gap: 3rem;
+}
+
+#my-detail {
+  margin: 150px 0px 0px 110px; 
+}
+
+.img {
+  height: 200px;
+  width: 150px;
+  border: 3px solid ;
+  border-radius: 30px;
+}
+
+.name {
+  font-size: 30px;
+  margin-left: 50px;
+  background: linear-gradient(to right, #fefae0, #bcbcbc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animated-text {
+  font-size: 50px;
+  margin: 70px 0px 190px 70px; 
+  background: linear-gradient(to right, #40ffaa, #4079ff, #40ffaa, #4079ff, #40ffaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animated-text::after {
+  content: "Hello";
+  animation: changeText 10s infinite;
+  display: inline-block;
+}
+
+@keyframes changeText {
+  0%   { content: "Developer"; }
+  40%  { content: "Programmer"; }
+  65%  { content: "Full Stack Developer"; }
+  100% { content: "Designer"; }
+}
+
+/* Project Section */
+
+#project-section {
+  display: flex;
+}
+
+#project-section li {
+  list-style: none;
+  margin-right: 16px; 
+  position: relative;
+}
+
+#project-section li::before {
+  content: "✨";
+  color: gold;
+  margin-right: 8px;
+}
+
+.project {
+  margin: 110px 0px 0px 110px;
+  font-size: 50px;
+  display: flex;
+}
+
+#project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.project-img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+  transform: scale(2);
+}
+
+.project1 {
+  font-size: 30px;
+  color: #f4f4f4;
+  margin-bottom: 30px;
+}
+
+.project-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+/* About Section */
+
+#about-section {
+  margin: 110px 0px 0px 110px;
+}
+
+#about-section li {
+  list-style: none;
+  margin-right: 16px; 
+  position: relative;
+}
+
+#about-section li::before {
+  content: "✨";
+  color: gold;
+  margin-right: 8px;
+}
+
+#about-box {
+  display: flex;
+  gap: 3rem;
+  border-radius: 10px;
+  margin-right: 5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#about-section p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+.about li {
+  font-size: 50px;
+}
+
+.about-text {
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 50px 110px 0px 0px;
+  color: #f4f4f4;
+}
+
+.personal {
+  font-size: 50px;
+  color: #f4f4f4;
+  margin-top: 60px;
+}
+
+#prsnl-box {
+  display: flex;
+  gap: 3rem;
+  border-radius: 10px;
+  margin-right: 5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Contact Section */
+#contact-section {
+  margin: 300px 0px 0px 50px;
+  text-align: center;
+}
+
+#contact-section li {
+  list-style: none;
+  margin-right: 16px; 
+  position: relative;
+}
+
+#contact-section li::before {
+  content: "✨";
+  color: gold;
+  margin-right: 8px;
+}
+
+.contact li {
+  font-size: 50px;
+}
+
+#contact-section p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+#contact-section .contact-text {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #f4f4f4;
+  margin-bottom: 190px;
+}
+
+.connect {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact-section .connect:hover {
+  color: #faedcd;
+  text-decoration: underline;
+}
+
